@@ -1,5 +1,8 @@
 [build]
-target = "powerpc-unknown-eabi.json"
+target = "gc.json"
+
+[target.gc]
+runner = "./dolphin.sh"
 
 [unstable]
 build-std = ["core", "compiler_builtins", "alloc"]

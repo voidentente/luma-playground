@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.cargo.target": "gc.json",
+    "rust-analyzer.check.allTargets": false,
+    "rust-analyzer.check.extraArgs": [
+        "--target",
+        "gc.json"
+    ]
+}

@@ -22,7 +22,8 @@ const VR: i32 = (0.500 * (1 << 16) as f64) as i32;
 const VG: i32 = (-0.419 * (1 << 16) as f64) as i32;
 const VB: i32 = (-0.081 * (1 << 16) as f64) as i32;
 
-/// Very bad conversion, it should take two pixels and output an u32, a proper implementation is
+/// Very bad conversion, it should take two pixels 
+/// and output an u32, a proper implementation is
 /// left as an exercise to the reader.
 ///
 /// An even better implementation would use the GPU to do the conversion.
@@ -40,7 +41,13 @@ const fn rgba2yuyv(pixel: i32, odd: bool) -> u16 {
 }
 
 /// Ported from Weston’s clients/simple-shm.c
-fn paint_pixels(mut image: *mut u16, padding: i32, width: i32, height: i32, time: i32) {
+fn paint_pixels(
+    mut image: *mut u16, 
+    padding: i32, 
+    width: i32, 
+    height: i32, 
+    time: i32
+) {
     let halfh = padding + (height - padding * 2) / 2;
     let halfw = padding + (width - padding * 2) / 2;
 
