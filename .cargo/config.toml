@@ -2,7 +2,7 @@
 target = "gc.json"
 
 [target.gc]
-runner = "./dolphin.sh"
+runner = "./.cargo/build-script-build"
 
 [unstable]
 build-std = ["core", "compiler_builtins", "alloc"]

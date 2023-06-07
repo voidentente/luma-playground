@@ -9,6 +9,9 @@ panic = "abort"
 [profile.release]
 panic = "abort"
 
+[build-dependencies.build-rs]
+version = "0.1.2"
+
 [dependencies.luma]
 git = "https://github.com/rust-wii/luma"
 
