@@ -1,4 +1,4 @@
-Should work on linux.
+Should work on Linux and Windows.
 
 `cargo build` to build the elf.
 
